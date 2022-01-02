@@ -1,0 +1,9 @@
+extends base
+include mixins/video.pug
+
+block content
+    h1 Welcome. This is for practice homepage
+    each video in videos
+        +video(video)
+    else
+        li Sorry nothing found. 
